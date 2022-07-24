@@ -20,9 +20,34 @@
         width: 20px ;
         height: 20px;
       }
+         #scrollUp {
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: rgb(250, 250, 250);
+      /* color: #fff; */
+      background-image: url(/top\ \(2\).png);
+      width: 38px;
+      height: 38px;
+      /* background-color: white; */
+    }
      
     </style>
     <script src="https://kit.fontawesome.com/3d7afb06c3.js" crossorigin="anonymous"></script>
+     <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/pulgins/scrollup-master/scrollup-master/dist/jquery.scrollUp.min.js"></script>
+    
+          $(function () {
+        $.scrollUp({
+          scrollDistance: 100,
+          scrollSpeed: 300,
+          easingType: 'linear',
+          // scrollText: 'Scroll to top',
+          scrollImg: true, 
+        });
+      });
+    });
+  </script>
   </head>
   <body>
 
